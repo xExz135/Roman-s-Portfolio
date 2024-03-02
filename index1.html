@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3f31843eda.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <audio controls autoplay loop>
+        <source src="images/song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" style="width: 350px;">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Socials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Welcome!</p>
+                <h1>Hi, I'm <span>Roman</span><br>from Indonesia</h1>
+            </div>
+        </div>
+
+    </div>
+    <!--------------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm a determined dual-degree student at Bina Nusantara University, majoring in Computer Science
+                        and Mathematics. I have a passionate spirit and always consistently strive for excellence in all
+                        endeavors. With a strong work ethic and a passion for learning, I tackle challenges head-on,
+                        pushing myself to both new experiences and achievements. My commitment to personal and academic
+                        growth drives me to excel in every aspect of my life.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('experiences')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('education background')">Education</p>
+                    </div>
+                    <!--------------------Skills-------------->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Communication</span><br>
+                                I speak both English and Indonesian at the same level.</li>
+                            <li><span>Adaptability</span><br>
+                                I'm a quick study, this gives me an advantage in tackling new situations and challenges.
+                            </li>
+                            <li><span>Organization</span><br>
+                                With a keen interest to manage tasks efficiently and maintain order amidst challenge, I
+                                excel in coordinating effectively to achieve team goals.</li>
+                        </ul>
+                    </div>
+                    <!-----Experience-->
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>October 2020</span><br>
+                                Served as a committee member for Canisius College Cup 2020 at Canisius College.</li>
+                            <li><span>February 2021</span><br>
+                                Participated as a member in CCABC (Canisius College Altar Boys Community).
+                            </li>
+                            <li><span>August 2021 </span><br>
+                                Actively participate in multiple cross-cultural dialogues as a part of the "Generation
+                                Global" weekly discussion events.</li>
+
+                            <li><span>June 2022</span><br>
+                                Create precise and engaging short films in Canimatography community.</li>
+                            <li><span>December 2023</span><br>
+                                Assisted in AIESEC Probationary period (Organizing Committee for Brand Communication)
+                                for Youth Motion Project Simulation.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education background">
+                        <ul>
+                            <li><span>Saint Cicilia Junior High School</span><br>
+                                Graduated with an overall average of 93.00 out of 100.00.</li>
+                            <li><span>Canisius College</span><br>
+                                Graduated with an overall average of 89.00 out of 100.00 and received my High School
+                                Diploma.
+                            </li>
+                            <li><span>Bina Nusantara University</span><br>
+                                Currently a second-semester student.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Socials</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>My Spotify</h3>
+                        <p>Let's be mutual! It'd be great to know your music taste!</p>
+                        <a href="https://open.spotify.com/user/romanjsnn?si=y_VZOhyNR52UFoV4WDTvng"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>My Instagram</h3>
+                        <p>How is your feeds? I wanna know.</p>
+                        <a href="https://www.instagram.com/romanjsn/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>My LinkedIn</h3>
+                        <p>Let's connect on LinkedIn. It'd be a blast if we get to see each other on future endeavors!
+                        </p>
+                        <a href="https://www.linkedin.com/in/romanjsn/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>romanjasonb@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+62 81380088811</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/romanjsn/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/romanjsn/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://open.spotify.com/user/romanjsnn?si=y_VZOhyNR52UFoV4WDTvng"><i
+                                class="fa-brands fa-spotify"></i></i></a>
+                        <a href=" discordapp.com/users/1110153953368350750"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Roman. Made with <i class="fa-solid fa-heart"></i> by Roman Jason Buntoro</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxs2uiIdn0Uz824Pgj04XscsjehH_O7ECHiT31htfZRh3S3g41OPYQIDXyolfOWHhtE/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+
+</body>
+
+</html>
